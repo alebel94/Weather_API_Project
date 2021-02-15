@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <h1 id = "test">Weather API Alejandro Beltran</h1>
+    <header>
+        <form id="findCity">
+            <input type="text" autocomplete="off" name="city" id="city" placeholder="Enter City Name">
+            <button type="submit" id="submitButton">Find City</button>
+        </form>
+    </header>
+    <div>
+        <p>City: <span id="city"></span></p>
+        <p>Forecast: <span id="forecast"></span></p>
+        <p>Feels like: <span id="feels_like"></span></p>
+        <p>High: <span id="high"></span></p>
+        <p>Low: <span id="low"></span></p>
+
+        <!--DropDown--->
+        <div class="temp_dropdown">
+            <button onclick="temp_button()" class="dropbtn">Degrees</button>
+            <div id="celsiusDropdown" class="temp_dropdown-content">
+                <a href="#farenheit">Fahrenheit</a>
+                <a href="#celsius">Celsius</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
